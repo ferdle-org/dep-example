@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/mogo-plus-api"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/mogo-plus-tpi-api"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/mogo-plus-service"
+    schedule:
+      interval: "daily"
+
+  # Enable version updates for Docker
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
