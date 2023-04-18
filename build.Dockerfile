@@ -4,7 +4,7 @@ ARG SPRING_PROFILES_ACTIVE
 
 FROM ${FROM_IMAGE} as cache
 
-FROM openjdk:17 as app-build
+FROM openjdk:18 as app-build
 
 RUN microdnf install findutils
 

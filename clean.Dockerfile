@@ -1,6 +1,6 @@
 ARG CODEARTIFACT_AUTH_TOKEN
 
-FROM openjdk:17 as app-build
+FROM openjdk:18 as app-build
 
 WORKDIR /workspace/app
 
